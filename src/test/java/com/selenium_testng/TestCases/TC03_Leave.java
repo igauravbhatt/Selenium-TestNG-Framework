@@ -1,10 +1,7 @@
 package com.selenium_testng.TestCases;
-import org.openqa.selenium.devtools.v131.page.model.Screenshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.selenium_testng.pages.Dashboard;
-import com.selenium_testng.pages.Leave;
 
 public class TC03_Leave extends baseTest{      
 

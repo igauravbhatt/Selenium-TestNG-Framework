@@ -34,7 +34,6 @@ public class PageObjectManager {
     Myinfo myinfo;
     Performance performance;
     Time time;
-
     Directory directory;
     Claim claim;
     Buzz buzz;

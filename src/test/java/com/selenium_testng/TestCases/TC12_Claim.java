@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.selenium_testng.pages.Claim;
 
-public class TC11_MyInfoeader extends baseTest{
+public class TC12_Claim extends baseTest{
     Claim claim;
 
 @Test

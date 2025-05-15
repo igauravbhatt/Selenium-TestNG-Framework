@@ -10,20 +10,27 @@ import com.selenium_testng.utils.commonMethods;
 public class Performance {
 
     WebDriver driver;
+    commonMethods common;
+    
 
     @FindBy(xpath = "//span[text()='Performance']")
     public WebElement PerformanceHeader;
+    @FindBy(linkText = "Performance")
+    public WebElement PerformanceLink;
 
     public Performance(WebDriver driver, commonMethods common) {
         this.driver = driver;
+        this.common = common;
         PageFactory.initElements(driver, this);
     }
 
-    public Performance(WebDriver driver2, commonMethods common) {
-        //TODO Auto-generated constructor stub
+    public void navigateToPerformancePage(){
+        common.waitAndClick(PerformanceLink);
+        System.out.println("Performance Link Clicked");
     }
 
     public String getPerformanceHeaderText() {
+        System.out.println("Header returned"+PerformanceHeader.getText());
         return PerformanceHeader.getText();
     }
 }

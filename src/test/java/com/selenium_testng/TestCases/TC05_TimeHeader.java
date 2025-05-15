@@ -1,7 +1,5 @@
 package com.selenium_testng.TestCases;
 
-import java.util.Properties;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
