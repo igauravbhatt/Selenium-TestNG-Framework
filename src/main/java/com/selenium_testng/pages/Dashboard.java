@@ -22,10 +22,16 @@ PageFactory.initElements(driver,this);
 @FindBy(xpath = "//h6[text()='Dashboard']")
 WebElement pageHeading;
 
-public WebElement getPageHeader(){
-    
-    System.out.println("heading from page = "+pageHeading.getText());
-    return pageHeading;
+@FindBy(linkText = "Dashboard")
+WebElement dashboardLink;
+
+public void navigateToDashboard(){
+common.waitAndClick(dashboardLink);
+System.out.println("Dashboard link clicked");
+}
+public String getDashboardHeaderText(){
+    System.out.println("Header returned = "+pageHeading.getText());
+    return pageHeading.getText();
 
 }
 

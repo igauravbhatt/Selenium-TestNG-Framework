@@ -15,6 +15,7 @@ public class base {
         
     public WebDriver init() {
         options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+    //    options.addArguments("--headless=new");
         driver=new ChromeDriver(options);   
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

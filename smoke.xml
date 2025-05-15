@@ -1,0 +1,7 @@
+<suite name="Smoke">
+  <test name = "orange hrm">
+    <classes>
+      <class name="com.selenium_testng.TestCases.TC03_loginNegative"/>      
+    </classes>
+  </test>
+</suite>

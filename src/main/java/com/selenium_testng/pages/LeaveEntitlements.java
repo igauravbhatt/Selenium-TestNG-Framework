@@ -12,43 +12,45 @@ import com.selenium_testng.utils.commonMethods;
 public class LeaveEntitlements<WebElements> {
     WebDriver driver;
     commonMethods common;
+
     public LeaveEntitlements(WebDriver driver, commonMethods common) {
-        this.driver =driver;
-        this.common =common;
-        PageFactory.initElements(driver,this);    
+        this.driver = driver;
+        this.common = common;
+        PageFactory.initElements(driver, this);
     }
 
-    @FindBy (xpath = "//button[@title=\"Assign Leave\"]")
+    @FindBy(xpath = "//button[@title=\"Assign Leave\"]")
     WebElement AssignLeave;
 
-    @FindBy (xpath = "//input[@placeholder='Type for hints...']")
+    @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     WebElement employeeNameTxtbx;
 
     // @FindBys (xpath = "//div[@role='listbox']", value = { @FindBy })
-    // WebElements employeeNameList;    
+    // WebElements employeeNameList;
 
-    @FindBy (xpath = "//div[@role='listbox']")
-    List <WebElement> empNameList;
+    @FindBy(xpath = "//div[@role='option']")
+    List<WebElement> empNameList;
 
+    public void clickonAssignLeave() {
+        common.waitAndClick(AssignLeave);
 
-public void clickonAssignLeave(String name){
-    AssignLeave.click();
-    employeeNameTxtbx.sendKeys(name);
-}
+    }
 
-public void getEmpName() throws InterruptedException{
-for(WebElement empName : empNameList){
-    
-        common.invisibilityOfText(empName);
-        System.out.println("get..."+empName.getText().trim());
-        if(empName.getText().equals("AAA BBB")){
-            System.out.println("cought..."+empName+" "+empName.getText());
-            empName.click();
-            break;
+    public void enterEmployeeName(String name) {
+        employeeNameTxtbx.sendKeys(name);
+    }
+
+    public void selectEmpName(String name) throws InterruptedException {
+        common.WaitTillSearchDisappeared(empNameList);
+
+        for (WebElement empName : empNameList) {
+            if (empName.getText().replaceAll("\\s", " ").equals(name)) {
+                System.out.println("finding = " + name);
+                System.out.println("found = " + empName.getText());
+                empName.click();
+                break;
+            }
+
         }
-    
-    
-}
-}
-
+    }
 }

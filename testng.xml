@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Test Suite" thread-count="2" parallel="false" >
+ 
+  <test name="Regression1">
+   <classes>
+      <class name="com.selenium_testng.TestCases.TC01_login"/>
+      <class name="com.selenium_testng.TestCases.TC02_Dashboard"/>
+      <class name="com.selenium_testng.TestCases.TC03_Leave"/>
+      <class name="com.selenium_testng.TestCases.TC04_loginNegative"/>
+      
+     
+    </classes>
+  </test>
+</suite>

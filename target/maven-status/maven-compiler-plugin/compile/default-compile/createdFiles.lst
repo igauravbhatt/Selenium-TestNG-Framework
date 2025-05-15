@@ -1,1 +1,7 @@
-com\selenium_testng\App.class
+com\selenium_testng\base\base.class
+com\selenium_testng\pages\LeaveEntitlements.class
+com\selenium_testng\pages\Dashboard.class
+com\selenium_testng\utils\commonMethods.class
+com\selenium_testng\base\PageObjectManager.class
+com\selenium_testng\utils\screenshotListener.class
+com\selenium_testng\pages\Login.class
