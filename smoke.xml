@@ -1,0 +1,7 @@
+<suite name="Smoke">
+  <test name = "orange hrm">
+    <classes>
+          
+    </classes>
+  </test>
+</suite>

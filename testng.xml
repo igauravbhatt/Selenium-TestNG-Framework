@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Test Suite" thread-count="2" parallel="false" >
+ 
+  <test name="Regression1">
+   <classes>
+  <class name="com.selenium_testng.TestCases.TC01_login"/>
+  <class name="com.selenium_testng.TestCases.TC02_Dashboard"/>
+  <class name="com.selenium_testng.TestCases.TC03_Leave"/>
+  <class name="com.selenium_testng.TestCases.TC04_loginNegative"/>
+  <class name="com.selenium_testng.TestCases.TC05_TimeHeader"/>
+  <class name="com.selenium_testng.TestCases.TC06_AdminHeader"/>
+  <class name="com.selenium_testng.TestCases.TC07_BuzzHeader"/>
+  <class name="com.selenium_testng.TestCases.TC09_DirectoryHeader"/>
+  <class name="com.selenium_testng.TestCases.TC10_MaintenenaceHeader"/>
+  <class name="com.selenium_testng.TestCases.TC11_MyInfoHeader"/>
+  <class name="com.selenium_testng.TestCases.TC12_Claim"/>
+  <class name="com.selenium_testng.TestCases.TC13_PerformanceHeader"/>
+  <class name="com.selenium_testng.TestCases.TC14_PIM"/>
+  <class name="com.selenium_testng.TestCases.TC15_RecruitementHeader"/>
+  <class name="com.selenium_testng.TestCases.TC16_TimeHeader"/>   
+     
+    </classes>
+  </test>
+</suite>
