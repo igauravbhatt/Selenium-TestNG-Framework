@@ -1,5 +1,6 @@
 package com.selenium_testng.TestCases;
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.selenium_testng.pages.Buzz;
@@ -12,7 +13,10 @@ public void verifybuzzHeader(){
     buzz = pom.getBuzzPageObject();
     login.loginToApp("Admin", "admin123");
     buzz.navigateToBuzzPage();
-    Assert.assertEquals(buzz.getBuzzHeaderText(), "Buzz");
+    String Header = buzz.getBuzzHeaderText();
+    pom.getScreenshotObject().screenshot(Header);
+    Assert.assertEquals(Header, "Buzz");
+    
 }
     
 }

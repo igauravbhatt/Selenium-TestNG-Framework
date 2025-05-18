@@ -9,12 +9,14 @@ public class TC10_MaintenenaceHeader extends baseTest{
     Maintenance maintanance;
 
 @Test
-public void verifyClaimHeader(){
+public void verifyMaintenanceHeader(){
     maintanance = pom.getMaintenancePageObject();
     login.loginToApp("Admin", "admin123");
     maintanance.navigateToMaintenancePage();
-    String header = maintanance.getMaintenanceHeaderText();
-    Assert.assertEquals(header, "Maintenance");
+    String Header = maintanance.getMaintenanceHeaderText();
+    pom.getScreenshotObject().screenshot(Header);
+    Assert.assertEquals(Header, "Maintenance");
+    
 }
     
 }

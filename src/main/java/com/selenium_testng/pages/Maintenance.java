@@ -17,6 +17,13 @@ public class Maintenance {
     @FindBy(linkText = "Maintenance")
     public WebElement MaintenanceLink;
 
+    @FindBy(xpath = "//button[@type='submit']")
+    WebElement ConfirmBtn;
+    
+
+    @FindBy(xpath = "//input[@name='password']")
+    WebElement maintenance_textbox;
+
     public Maintenance(WebDriver driver, commonMethods common) {
         this.driver = driver;
         this.common = common;
@@ -29,6 +36,8 @@ public class Maintenance {
     }
 
     public String getMaintenanceHeaderText() {
+        maintenance_textbox.sendKeys("admin123");
+        ConfirmBtn.click();
         System.out.println("Header returned"+MaintenanceHeader.getText());
         return MaintenanceHeader.getText();
     }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="10.121" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="51.505" tests="14" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="surefire.suiteXmlFiles" value="smoke.xml"/>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -11,12 +10,13 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="suiteXmlFile" value="testng"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\dell\AppData\Local\Temp\surefire6907512199673324280\surefirebooter17266703215929528687.jar C:\Users\dell\AppData\Local\Temp\surefire6907512199673324280 2025-05-05T23-12-28_017-jvmRun1 surefire2855031959749319331tmp surefire_05936846144192264030tmp"/>
+    <property name="sun.java.command" value="C:\Users\dell\AppData\Local\Temp\surefire16416845194953686502\surefirebooter7438338275425823356.jar C:\Users\dell\AppData\Local\Temp\surefire16416845194953686502 2025-05-18T00-32-09_757-jvmRun1 surefire12877448328611684499tmp surefire_016132941323298090812tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\dell\Desktop\stng\target\test-classes;C:\Users\dell\Desktop\stng\target\classes;C:\Users\dell\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\dell\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\dell\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\dell\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\dell\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\dell\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\dell\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\dell\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\dell\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\dell\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\dell\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\dell\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\dell\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\dell\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\dell\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\dell\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\dell\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\dell\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\dell\AppData\Local\Temp\surefire6907512199673324280\surefirebooter17266703215929528687.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dell\AppData\Local\Temp\surefire16416845194953686502\surefirebooter7438338275425823356.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.5+11-LTS"/>
@@ -60,5 +60,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyInvalidLogin" classname="com.selenium_testng.TestCases.TC03_loginNegative" time="2.504"/>
+  <testcase name="verifyDashboardHeader" classname="com.selenium_testng.TestCases.TC02_Dashboard" time="6.647"/>
+  <testcase name="verifyMyInfoHeader" classname="com.selenium_testng.TestCases.TC11_MyInfoHeader" time="9.299"/>
+  <testcase name="verifyLogin" classname="com.selenium_testng.TestCases.TC01_login" time="10.12"/>
+  <testcase name="verifyLeavepageHeader" classname="com.selenium_testng.TestCases.TC03_Leave" time="10.44"/>
+  <testcase name="verifyInvalidLogin" classname="com.selenium_testng.TestCases.TC04_loginNegative" time="10.987"/>
+  <testcase name="verifyTimeHeader" classname="com.selenium_testng.TestCases.TC05_TimeHeader" time="13.374"/>
+  <testcase name="verifybuzzHeader" classname="com.selenium_testng.TestCases.TC07_BuzzHeader" time="16.809"/>
+  <testcase name="verifyAdminHeader" classname="com.selenium_testng.TestCases.TC06_AdminHeader" time="18.459"/>
+  <testcase name="verifyDirectoryHeader" classname="com.selenium_testng.TestCases.TC09_DirectoryHeader" time="20.031"/>
+  <testcase name="verifyMaintenanceHeader" classname="com.selenium_testng.TestCases.TC10_MaintenenaceHeader" time="22.11"/>
+  <testcase name="verifyPerformanceHeader" classname="com.selenium_testng.TestCases.TC13_PerformanceHeader" time="1.666"/>
+  <testcase name="verifyClaimHeader" classname="com.selenium_testng.TestCases.TC12_Claim" time="1.827"/>
+  <testcase name="verifyPIMHeader" classname="com.selenium_testng.TestCases.TC14_PIM" time="3.598"/>
+  <testcase name="verifyRecrutementHeader" classname="com.selenium_testng.TestCases.TC15_RecruitementHeader" time="4.572"/>
 </testsuite>
