@@ -16,9 +16,10 @@ public class TC04_loginNegative extends baseTest{
     public void verifyInvalidLogin(){
 
        Boolean result = login.VerifyLoginNegative("Admin", "adminf1283");
-       pom.getScreenshotObject().screenshot("VerifyLogin_Negative");
+       
+       pom.getScreenshotObject().screenshot("Negative_Login");
        Assert.assertTrue(result, "❌ Error: 'Invalid credentials' message not shown as expected."); 
-     
+       
 
 }
 

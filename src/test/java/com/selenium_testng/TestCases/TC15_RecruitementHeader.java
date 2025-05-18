@@ -12,12 +12,14 @@ public class TC15_RecruitementHeader extends baseTest{
     Recruitment recruitment;
 
 @Test
-public void verifyTimeHeader(){
+public void verifyRecrutementHeader(){
     recruitment = pom.getRecruitmentPageObject();
     login.loginToApp("Admin", "admin123");
     recruitment.navigateToRecruitementPage();
     String Header = recruitment.getRecruitmentHeaderText();
-    Assert.assertEquals(Header, "Time");
+    pom.getScreenshotObject().screenshot(Header);
+    Assert.assertEquals(Header, "Recruitment");
+    
 }
     
 }

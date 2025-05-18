@@ -9,12 +9,14 @@ public class TC06_AdminHeader extends baseTest{
     Admin admin;
 
 @Test
-public void verifyHeader(){
+public void verifyAdminHeader(){
     admin = pom.getAdminPageObject();
     login.loginToApp("Admin", "admin123");
     admin.navigateToAdminPage();
     String Header = admin.getAdminHeaderText();
+    pom.getScreenshotObject().screenshot(Header);  
     Assert.assertEquals(Header, "Admin");
+    
 }
     
 }

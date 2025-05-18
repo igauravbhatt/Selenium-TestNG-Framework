@@ -9,9 +9,10 @@ public class TC01_login extends baseTest {
     @Test
     public void verifyLogin() {
         login.loginToApp("Admin", "admin123");   
+        pom.getScreenshotObject().screenshot("Login");
         Assert.assertEquals(login.getPageHeader().getText(), "Dashboard");
         System.out.println("---Logged successfull and Dashboard visible---");
-        pom.getScreenshotObject().screenshot("VerifyLogin");
+        
         
         
     }

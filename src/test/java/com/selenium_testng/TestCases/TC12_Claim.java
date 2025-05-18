@@ -12,7 +12,10 @@ public void verifyClaimHeader(){
     claim = pom.getClaimPageObject();
     login.loginToApp("Admin", "admin123");
     claim.navigateToClaimPage();
-    Assert.assertEquals(claim.getClaimHeaderText(), "Buzz");
+    String header = claim.getClaimHeaderText();
+    pom.getScreenshotObject().screenshot(header);
+    Assert.assertEquals(claim.getClaimHeaderText(), "Claim");
+    
 }
     
 }

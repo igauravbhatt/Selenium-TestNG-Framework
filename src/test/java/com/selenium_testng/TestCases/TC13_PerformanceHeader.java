@@ -15,7 +15,9 @@ public void verifyPerformanceHeader(){
     login.loginToApp("Admin", "admin123");
     performance.navigateToPerformancePage();
     String Header = performance.getPerformanceHeaderText();
+    pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "Performance");
+    
 }
     
 }
