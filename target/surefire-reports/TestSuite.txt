@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.505 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 31.061 s <<< FAILURE! - in TestSuite
+verifyInvalidLogin(com.selenium_testng.TestCases.TC04_loginNegative)  Time elapsed: 12.626 s  <<< FAILURE!
+java.lang.AssertionError: ❌ Error: 'Invalid credentials' message not shown as expected. expected [true] but found [false]
+	at com.selenium_testng.TestCases.TC04_loginNegative.verifyInvalidLogin(TC04_loginNegative.java:19)
+

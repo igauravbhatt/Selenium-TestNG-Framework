@@ -4,6 +4,7 @@ com\selenium_testng\pages\Dashboard.class
 com\selenium_testng\utils\commonMethods.class
 com\selenium_testng\base\PageObjectManager.class
 com\selenium_testng\pages\Recruitment.class
+com\selenium_testng\utils\ReportListener.class
 com\selenium_testng\utils\screenshotListener.class
 com\selenium_testng\utils\PropertyReader.class
 com\selenium_testng\base\base.class

@@ -34,6 +34,12 @@
     <artifactId>selenium-java</artifactId>
     <version>4.29.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
     <groupId>commons-io</groupId>
@@ -68,11 +74,12 @@
       <version>2.22.1</version>
       <configuration>
         <suiteXmlFiles>
-          <suiteXmlFile>testng.xml</suiteXmlFile>
+          <suiteXmlFile>Regression.xml</suiteXmlFile>
           <suiteXmlFile>smoke.xml</suiteXmlFile>
         </suiteXmlFiles>
       </configuration>
     </plugin>
+    
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
