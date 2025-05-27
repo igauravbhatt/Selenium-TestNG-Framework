@@ -16,7 +16,7 @@ public void verifyPIMHeader(){
     login.loginToApp("Admin", "admin123");
     pim.navigateToPIMPage();
     String Header = pim.getPIMHeaderText();
-    pom.getScreenshotObject().screenshot(Header);
+   // pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "PIM");
     
 }

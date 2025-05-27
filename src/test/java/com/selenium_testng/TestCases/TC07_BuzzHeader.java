@@ -14,7 +14,7 @@ public void verifybuzzHeader(){
     login.loginToApp("Admin", "admin123");
     buzz.navigateToBuzzPage();
     String Header = buzz.getBuzzHeaderText();
-    pom.getScreenshotObject().screenshot(Header);
+   // pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "Buzz");
     
 }

@@ -17,11 +17,9 @@ import com.selenium_testng.pages.Performance;
 import com.selenium_testng.pages.Recruitment;
 import com.selenium_testng.pages.Time;
 import com.selenium_testng.utils.commonMethods;
-import com.selenium_testng.utils.screenshotListener;
 
 public class PageObjectManager {
     WebDriver driver;
-    screenshotListener capture;
     commonMethods common;
     Login login;
     Dashboard dashboard;
@@ -42,13 +40,6 @@ public class PageObjectManager {
 
         this.driver = driver;
         this.common = common;
-    }
-
-    public screenshotListener getScreenshotObject() {
-        if (capture == null) {
-            capture = new screenshotListener(driver);
-        }
-        return capture;
 
     }
 

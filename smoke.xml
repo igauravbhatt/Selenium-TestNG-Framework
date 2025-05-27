@@ -1,11 +1,13 @@
-<suite name="Smoke" parallel="classes">
+<suite name="smoke" parallel="methods">
 <listeners>
 <listener class-name="com.selenium_testng.Listeners"/>
+
 </listeners>
-  <test name = "SmokeSuite" thread-count="10">
+  <test name = "SmokeSuite" thread-count="3">
     <classes>
            <class name="com.selenium_testng.TestCases.TC01_login"/> 
-          <class name="com.selenium_testng.TestCases.TC04_loginNegative"/>
+           <class name="com.selenium_testng.TestCases.TC04_loginNegative"/>
+            <class name="com.selenium_testng.TestCases.TC02_Dashboard"/>
     </classes>
   </test>
 </suite>

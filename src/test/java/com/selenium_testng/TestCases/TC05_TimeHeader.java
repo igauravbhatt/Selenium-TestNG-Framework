@@ -18,7 +18,7 @@ public void verifyTimeHeader(){
     login.loginToApp("Admin", "admin123");
     time.navigateToTimePage();
     String Header = time.getTimeHeader();
-    pom.getScreenshotObject().screenshot(Header);  
+   // pom.getScreenshotObject().screenshot(Header);  
     Assert.assertEquals(Header, "Time");
           
 }

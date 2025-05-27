@@ -14,7 +14,7 @@ public void verifyDirectoryHeader(){
     login.loginToApp("Admin", "admin123");
     directory.navigateToDirectoryPage();
     String header = directory.getDirectoryHeaderText();
-    pom.getScreenshotObject().screenshot(header);
+   // pom.getScreenshotObject().screenshot(header);
     Assert.assertEquals(header, "Directory");
     
 }
