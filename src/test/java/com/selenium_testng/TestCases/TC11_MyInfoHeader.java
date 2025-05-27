@@ -13,7 +13,7 @@ public void verifyMyInfoHeader(){
     login.loginToApp("Admin", "admin123");
     myinfo.navigateToMyinfoPage();
     String Header = myinfo.getMyInfoHeaderText();
-    pom.getScreenshotObject().screenshot(Header);
+   // pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "My Info");
     
 }

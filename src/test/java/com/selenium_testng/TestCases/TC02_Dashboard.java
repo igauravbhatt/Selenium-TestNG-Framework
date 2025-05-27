@@ -18,7 +18,7 @@ public class TC02_Dashboard extends baseTest {
         Dashboard dashboard = login.loginToApp("Admin", "admin123");
         dashboard.navigateToDashboard();
         String Header = dashboard.getDashboardHeaderText();
-        pom.getScreenshotObject().screenshot(Header);       
+       // pom.getScreenshotObject().screenshot(Header);       
         Assert.assertEquals(Header, "Dashboard");
          
     }

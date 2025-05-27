@@ -2,7 +2,6 @@ package com.selenium_testng.utils;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Method;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -10,16 +9,16 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class screenshotListener {
-    WebDriver driver;
-   
-    static String FolderPath = System.getProperty("user.dir") + "\\src\\Screenshots";
-    String path = FolderPath + "\\\\";
+    //WebDriver driver;
 
-    public screenshotListener(WebDriver driver) {
+    static String FolderPath = System.getProperty("user.dir") + "\\Screenshots";
+    static String filepath = FolderPath + "\\\\";
+
+    /*public screenshotListener(WebDriver driver) {
         this.driver = driver;
-       
-    }
-    
+        System.out.println("screenshot got driver");
+
+    }*/
 
     static {
         File folder = new File(FolderPath);
@@ -31,16 +30,18 @@ public class screenshotListener {
         }
     }
 
-    public void screenshot(String testcase) {
+    public static String captureScreenshot(WebDriver driver,String testcase) {
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        File Destination = new File(path + testcase + "_" + System.currentTimeMillis() + ".png");
-        System.out.println(Destination);
+        String filename = filepath + testcase + "_" + System.currentTimeMillis() + ".png";
+        File Destination = new File(filename);
+        System.out.println(Destination.getAbsolutePath());
         try {
             FileUtils.copyFile(source, Destination);
+            return Destination.getAbsolutePath();
         } catch (IOException e) {
             System.out.println("Unable to capture screenshot");
             e.printStackTrace();
+            return null;
         }
 
     }

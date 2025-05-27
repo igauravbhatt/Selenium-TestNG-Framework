@@ -17,7 +17,7 @@ public void verifyRecrutementHeader(){
     login.loginToApp("Admin", "admin123");
     recruitment.navigateToRecruitementPage();
     String Header = recruitment.getRecruitmentHeaderText();
-    pom.getScreenshotObject().screenshot(Header);
+  //  pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "Recruitment");
     
 }

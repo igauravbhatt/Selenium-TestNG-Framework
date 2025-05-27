@@ -14,7 +14,7 @@ public void verifyAdminHeader(){
     login.loginToApp("Admin", "admin123");
     admin.navigateToAdminPage();
     String Header = admin.getAdminHeaderText();
-    pom.getScreenshotObject().screenshot(Header);  
+   // pom.getScreenshotObject().screenshot(Header);  
     Assert.assertEquals(Header, "Admin");
     
 }

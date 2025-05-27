@@ -14,7 +14,7 @@ public void verifyMaintenanceHeader(){
     login.loginToApp("Admin", "admin123");
     maintanance.navigateToMaintenancePage();
     String Header = maintanance.getMaintenanceHeaderText();
-    pom.getScreenshotObject().screenshot(Header);
+  //  pom.getScreenshotObject().screenshot(Header);
     Assert.assertEquals(Header, "Maintenance");
     
 }

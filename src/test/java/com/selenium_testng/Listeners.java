@@ -7,33 +7,38 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import com.selenium_testng.TestCases.baseTest;
+
+import com.selenium_testng.base.base;
 import com.selenium_testng.utils.ReportListener;
+import com.selenium_testng.utils.screenshotListener;
 
 
-public class Listeners extends baseTest implements ITestListener {
+public class Listeners implements ITestListener {
     ExtentReports extent = ReportListener.reportGenerator();
-    ExtentTest test ;
+   // ExtentTest test ;
     private static ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 
     @Override
     public void onTestStart(ITestResult result) {
-    test = extent.createTest(result.getMethod().getMethodName());   
-    extentTest.set(test);
+    ExtentTest currenttest = extent.createTest(result.getMethod().getMethodName());   
+    extentTest.set(currenttest);
        
     }
     @Override
     public void onTestSuccess(ITestResult result) {
        
-        extentTest.get().log(Status.PASS, "PASS");
+        extentTest.get().log(Status.PASS, "PASSSSS");
+        String path = screenshotListener.captureScreenshot(base.getDriver(),result.getMethod().getMethodName());
+        extentTest.get().pass(MediaEntityBuilder.createScreenCaptureFromPath(path).build());
     }
     @Override
     public void onTestFailure(ITestResult result) {
         
         extentTest.get().fail(result.getThrowable());
-       // extentTest.get().fail(MediaEntityBuilder.createScreenCaptureFromPath(pom.getScreenshotObject().screenshot(getDriver(), result.getMethod().getMethodName())).build());
+        String path = screenshotListener.captureScreenshot(base.getDriver(),result.getMethod().getMethodName());
+        extentTest.get().fail(MediaEntityBuilder.createScreenCaptureFromPath(path).build());
     }    
     @Override
     public void onFinish(ITestContext context) {

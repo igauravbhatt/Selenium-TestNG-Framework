@@ -9,7 +9,7 @@ public class TC03_Leave extends baseTest{
      public void verifyLeavepageHeader(){
         login.loginToApp("Admin", "admin123");
         String Header = pom.getLeavePageObject().getLeaveHeaderText();
-        pom.getScreenshotObject().screenshot(Header);  
+        //pom.getScreenshotObject().screenshot(Header);  
         Assert.assertEquals(Header, "Leave");
               
        

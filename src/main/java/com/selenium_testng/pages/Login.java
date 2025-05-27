@@ -45,7 +45,6 @@ public class Login {
         password.sendKeys(pwd);
         submit.submit();
         common.WaitTillVisible(pageHeaderBy);
-        System.out.println("Logged in successfully");
         return new Dashboard(driver,common);
     }
 
